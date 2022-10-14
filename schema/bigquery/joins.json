@@ -1,0 +1,17 @@
+[
+  {
+    "name": "line_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "station1_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "station2_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED"
+  }
+]

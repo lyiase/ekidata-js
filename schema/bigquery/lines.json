@@ -1,0 +1,67 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "company_id",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_normal",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_kana",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_long",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "colour_hex",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "colour_text",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "line_type",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "longitude",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "latitude",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "zoom",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "sort",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  }
+]

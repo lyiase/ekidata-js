@@ -1,0 +1,15 @@
+- { name: id, type: INTEGER, mode: NULLABLE }
+- { name: group_id, type: INTEGER, mode: NULLABLE }
+- { name: name_normal, type: STRING, mode: NULLABLE }
+- { name: name_kana, type: STRING, mode: NULLABLE }
+- { name: name_romaji, type: STRING, mode: NULLABLE }
+- { name: line_id, type: INTEGER, mode: NULLABLE }
+- { name: prefecture, type: INTEGER, mode: NULLABLE }
+- { name: postcode, type: STRING, mode: NULLABLE }
+- { name: address, type: STRING, mode: NULLABLE }
+- { name: longitude, type: FLOAT, mode: NULLABLE }
+- { name: latitude, type: FLOAT, mode: NULLABLE }
+- { name: open_date, type: STRING, mode: NULLABLE }
+- { name: close_date, type: STRING, mode: NULLABLE }
+- { name: status, type: INTEGER, mode: NULLABLE }
+- { name: sort, type: INTEGER, mode: NULLABLE }

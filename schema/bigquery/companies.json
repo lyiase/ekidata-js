@@ -1,0 +1,52 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "railroad_id",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_normal",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_kana",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_long",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name_short",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "url",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "type",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "status",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "sort",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  }
+]

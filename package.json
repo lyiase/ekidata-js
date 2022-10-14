@@ -1,0 +1,26 @@
+{
+  "name": "ekidata",
+  "version": "0.1.0",
+  "description": "ekidata.jp for JavaScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyiase/ekidata-js.git"
+  },
+  "author": "Lyiase",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyiase/ekidata-js/issues"
+  },
+  "homepage": "https://github.com/lyiase/ekidata-js#readme",
+  "dependencies": {
+    "@google-cloud/bigquery": "^6.0.3",
+    "commander": "^9.4.1",
+    "csv-parse": "^5.3.1",
+    "glob": "^7.2.3",
+    "sqlite3": "^5.1.2"
+  }
+}
