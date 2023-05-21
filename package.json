@@ -1,7 +1,7 @@
 {
   "name": "ekidata",
   "version": "0.1.0",
-  "description": "ekidata.jp for JavaScript",
+  "description": "ekidata.jp via node.js",
   "main": "index.js",
   "type": "module",
   "scripts": {
