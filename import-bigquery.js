@@ -42,7 +42,7 @@ const columnNamesFromSchemaFile = (path) => {
   return columns.map(col => col.name);
 };
 
-const importEkidata = async (csvPath, tableId, datasetId = DEFAULT_DATASET_ID) => {
+const importEkidata = async (csvPath, tableId, filter = record => record, datasetId = DEFAULT_DATASET_ID) => {
   const csvString = fs.readFileSync(csvPath, 'utf8');
   const records = parse(csvString, {
     columns: columnNamesFromSchemaFile(SCHEMA_PATH_BASE + tableId + '.json'),
@@ -54,11 +54,25 @@ const importEkidata = async (csvPath, tableId, datasetId = DEFAULT_DATASET_ID) =
   
   console.log(records[0]);
   for(const record of records) {
-    await insertTable(record, tableId, datasetId);
+    await insertTable(filter(record), tableId, datasetId);
   }
+}
+
+// 駅名が一般名称が異なる場合があるのを補正する
+const filterEkidataStationRecord = (record) => {
+  const replaceMap = {
+    '押上〈スカイツリー前〉': '押上',
+    '押上（スカイツリー前）': '押上',
+    '明治神宮前〈原宿〉': '明治神宮前',
+    '獨協大学前〈草加松原〉': '獨協大学前',
+  }
+  
+  record[2] = replaceMap[ record[2] ] || record[2];
+  
+  return record;
 }
 
 await importEkidata(CSV_PATH_COMPANIES, 'companies');
 await importEkidata(CSV_PATH_JOINS, 'joins');
 await importEkidata(CSV_PATH_LINES, 'lines');
-await importEkidata(CSV_PATH_STATIONS, 'stations');
+await importEkidata(CSV_PATH_STATIONS, 'stations', filterEkidataStationRecord);
